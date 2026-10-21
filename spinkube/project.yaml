@@ -52,9 +52,9 @@ security:
 
 governance:
   contributing:
-    path: "https://github.com/spinframework/spin-operator/blob/main/CONTRIBUTING.md"
+    path: "https://github.com/spinframework/spinkube-governance/blob/main/CONTRIBUTOR_LADDER.md"
   code_of_conduct:
-    path: "https://github.com/spinframework/spin-operator/blob/main/CODE_OF_CONDUCT.md"
+    path: "https://github.com/spinframework/spinkube-governance/blob/main/CODE_OF_CONDUCT.md"
 
 legal:
   license:

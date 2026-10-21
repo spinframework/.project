@@ -6,7 +6,7 @@
 schema_version: "1.0.0"
 slug: "spin"
 name: "Spin"
-description: "Spin is a framework for building and deploying serverless applications in WebAssembly."
+description: "Spin is a framework for building serverless applications in WebAssembly."
 type: "project"
 package_managers:
   ghcr: "ghcr.io/spinframework/spin"
@@ -44,6 +44,7 @@ repositories:
     primary: true
   - url: "https://github.com/spinframework/.project"
   - url: "https://github.com/spinframework/community"
+  - url: "https://github.com/spinframework/governance"
   - url: "https://github.com/spinframework/homebrew-tap"
   - url: "https://github.com/spinframework/http-auth-middleware"
   - url: "https://github.com/spinframework/otel-plugin"
@@ -59,11 +60,7 @@ repositories:
   - url: "https://github.com/spinframework/spin-redirect"
   - url: "https://github.com/spinframework/spin-rust-sdk"
   - url: "https://github.com/spinframework/spin-test"
-  - url: "https://github.com/spinframework/spin-trigger-command"
-  - url: "https://github.com/spinframework/spin-trigger-cron"
-  - url: "https://github.com/spinframework/spin-trigger-mqtt"
   - url: "https://github.com/spinframework/spin-trigger-plugins"
-  - url: "https://github.com/spinframework/spin-trigger-sqs"
 
 website: "https://spinframework.dev"
 
@@ -83,7 +80,7 @@ governance:
   contributing:
     path: "https://github.com/spinframework/spin/blob/main/CONTRIBUTING.md"
   code_of_conduct:
-    path: "https://github.com/spinframework/spin/blob/main/CODE_OF_CONDUCT.md"
+    path: "https://github.com/spinframework/governance/blob/main/CODE_OF_CONDUCT.md"
 
 legal:
   license:
