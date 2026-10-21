@@ -1,0 +1,77 @@
+# .project metadata for SpinKube
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+
+schema_version: "1.0.0"
+slug: "spinkube"
+name: "SpinKube"
+description: "Open source platform for efficiently running (containerless) Spin-based WebAssembly (Wasm) applications on Kubernetes."
+type: "project"
+package_managers:
+  ghcr:
+    - "ghcr.io/spinframework/spin-operator"
+    - "ghcr.io/spinframework/runtime-class-manager"
+    - "ghcr.io/spinframework/containerd-shim-spin/node-installer"
+  helm:
+    - "oci://ghcr.io/spinframework/charts/spin-operator"
+    - "oci://ghcr.io/spinframework/charts/runtime-class-manager"
+project_lead: "kate-goldenring"
+slack_channels:
+  - name: "#spinkube"
+    primary: true
+  - name: "#spinkube-dev"
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2025-01-21T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/330"
+
+repositories:
+  - url: "https://github.com/spinframework/spin-operator"
+    primary: true
+  - url: "https://github.com/spinframework/containerd-shim-spin"
+  - url: "https://github.com/spinframework/runtime-class-manager"
+  - url: "https://github.com/spinframework/spin-plugin-kube"
+  - url: "https://github.com/spinframework/spinkube-docs"
+  - url: "https://github.com/spinframework/spinkube-governance"
+
+website: "https://www.spinkube.dev/"
+
+# TODO: Add adopters list once ADOPTERS.md exists, then uncomment:
+# adopters:
+#   path: "https://github.com/x/x/blob/main/ADOPTERS.md"
+
+artwork: "https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/spinkube.svg"
+
+security:
+  policy:
+    path: "https://github.com/spinframework/spin-operator/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/spinframework/spin-operator/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/spinframework/spinkube-governance/blob/main/CONTRIBUTOR_LADDER.md"
+  code_of_conduct:
+    path: "https://github.com/spinframework/spinkube-governance/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/spinframework/spin-operator/blob/main/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/spinframework/spin-operator/blob/main/README.md"
+
+landscape:
+  category: "Wasm"
+  subcategory: "Orchestration & Management"
+
+# CLOMonitor Score: 65/100
+# Documentation: 61 | License: 100 | Best Practices: 100 | Security: 0

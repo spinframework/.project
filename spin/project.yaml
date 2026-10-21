@@ -1,0 +1,103 @@
+# .project metadata for Spin
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+
+schema_version: "1.0.0"
+slug: "spin"
+name: "Spin"
+description: "Spin is a framework for building serverless applications in WebAssembly."
+type: "project"
+package_managers:
+  ghcr: "ghcr.io/spinframework/spin"
+  cargo:
+    - "spin-sdk"
+    - "spin-macro"
+    - "spin-executor"
+  npm:
+    - "@spinframework/build-tools"
+    - "@spinframework/spin-kv"
+    - "@spinframework/spin-llm"
+    - "@spinframework/spin-mqtt"
+    - "@spinframework/spin-mysql"
+    - "@spinframework/spin-postgres"
+    - "@spinframework/spin-redis"
+    - "@spinframework/spin-sqlite"
+    - "@spinframework/spin-trigger-redis"
+    - "@spinframework/spin-variables"
+    - "@spinframework/wasi-http-proxy"
+  pypi: "spin-sdk"
+  go: "github.com/spinframework/spin-go-sdk/v3"
+project_lead: "fibonacci1729"
+slack_channels:
+  - name: "#spin"
+    primary: true
+  - name: "#spin-maintainers"
+
+maturity_log:
+  - phase: "sandbox"
+    date: "2025-01-21T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/116"
+
+repositories:
+  - url: "https://github.com/spinframework/spin"
+    primary: true
+  - url: "https://github.com/spinframework/.project"
+  - url: "https://github.com/spinframework/community"
+  - url: "https://github.com/spinframework/governance"
+  - url: "https://github.com/spinframework/homebrew-tap"
+  - url: "https://github.com/spinframework/http-auth-middleware"
+  - url: "https://github.com/spinframework/otel-plugin"
+  - url: "https://github.com/spinframework/spin-deps-plugin"
+  - url: "https://github.com/spinframework/spin-docs"
+  - url: "https://github.com/spinframework/spin-dotnet-sdk"
+  - url: "https://github.com/spinframework/spin-environments"
+  - url: "https://github.com/spinframework/spin-fileserver"
+  - url: "https://github.com/spinframework/spin-go-sdk"
+  - url: "https://github.com/spinframework/spin-js-sdk"
+  - url: "https://github.com/spinframework/spin-plugins"
+  - url: "https://github.com/spinframework/spin-python-sdk"
+  - url: "https://github.com/spinframework/spin-redirect"
+  - url: "https://github.com/spinframework/spin-rust-sdk"
+  - url: "https://github.com/spinframework/spin-test"
+  - url: "https://github.com/spinframework/spin-trigger-plugins"
+
+website: "https://spinframework.dev"
+
+# TODO: Add adopters list once ADOPTERS.md exists, then uncomment:
+# adopters:
+#   path: "https://github.com/x/x/blob/main/ADOPTERS.md"
+
+artwork: "https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/spin.svg"
+
+security:
+  policy:
+    path: "https://github.com/spinframework/spin/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/spinframework/spin/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/spinframework/spin/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/spinframework/governance/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/spinframework/spin/blob/main/LICENSE"
+  identity_type:
+    has_dco: true
+    has_cla: false
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/spinframework/spin/blob/main/README.md"
+
+landscape:
+  category: "Wasm"
+  subcategory: "Application Frameworks"
+
+# CLOMonitor Score: 77/100
+# Documentation: 93 | License: 75 | Best Practices: 68 | Security: 59
