@@ -2,15 +2,22 @@
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
 # TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "spinkube"
 name: "SpinKube"
 description: "Open source platform for efficiently running (containerless) Spin-based WebAssembly (Wasm) applications on Kubernetes."
 type: "project"
-project_lead: "fibonacci1729" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+package_managers:
+  ghcr:
+    - "ghcr.io/spinframework/spin-operator"
+    - "ghcr.io/spinframework/runtime-class-manager"
+    - "ghcr.io/spinframework/containerd-shim-spin/node-installer"
+  helm:
+    - "oci://ghcr.io/spinframework/charts/spin-operator"
+    - "oci://ghcr.io/spinframework/charts/runtime-class-manager"
+project_lead: "kate-goldenring"
+slack_channels:
   - name: "#spinkube"
     primary: true
   - name: "#spinkube-dev"
@@ -18,7 +25,7 @@ slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
 maturity_log:
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/330" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/330"
 
 repositories:
   - url: "https://github.com/spinframework/spin-operator"
@@ -30,6 +37,10 @@ repositories:
   - url: "https://github.com/spinframework/spinkube-governance"
 
 website: "https://www.spinkube.dev/"
+
+# TODO: Add adopters list once ADOPTERS.md exists, then uncomment:
+# adopters:
+#   path: "https://github.com/x/x/blob/main/ADOPTERS.md"
 
 artwork: "https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/spinkube.svg"
 
@@ -49,8 +60,8 @@ legal:
   license:
     path: "https://github.com/spinframework/spin-operator/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 

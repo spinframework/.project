@@ -2,28 +2,74 @@
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
 # TODO: Add adopters list (ADOPTERS.md)
-# TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "spin"
 name: "Spin"
 description: "Spin is a framework for building and deploying serverless applications in WebAssembly."
 type: "project"
-project_lead: "fibonacci1729" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+package_managers:
+  ghcr: "ghcr.io/spinframework/spin"
+  cargo:
+    - "spin-sdk"
+    - "spin-macro"
+    - "spin-executor"
+  npm:
+    - "@spinframework/build-tools"
+    - "@spinframework/spin-kv"
+    - "@spinframework/spin-llm"
+    - "@spinframework/spin-mqtt"
+    - "@spinframework/spin-mysql"
+    - "@spinframework/spin-postgres"
+    - "@spinframework/spin-redis"
+    - "@spinframework/spin-sqlite"
+    - "@spinframework/spin-trigger-redis"
+    - "@spinframework/spin-variables"
+    - "@spinframework/wasi-http-proxy"
+  pypi: "spin-sdk"
+  go: "github.com/spinframework/spin-go-sdk/v3"
+project_lead: "fibonacci1729"
+slack_channels:
   - name: "#spin"
     primary: true
+  - name: "#spin-maintainers"
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/116" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/116"
 
-repositories: # TODO: add other Spin repositories (SDKs, plugins, docs) as needed
+repositories:
   - url: "https://github.com/spinframework/spin"
     primary: true
+  - url: "https://github.com/spinframework/.project"
+  - url: "https://github.com/spinframework/community"
+  - url: "https://github.com/spinframework/homebrew-tap"
+  - url: "https://github.com/spinframework/http-auth-middleware"
+  - url: "https://github.com/spinframework/otel-plugin"
+  - url: "https://github.com/spinframework/spin-deps-plugin"
+  - url: "https://github.com/spinframework/spin-docs"
+  - url: "https://github.com/spinframework/spin-dotnet-sdk"
+  - url: "https://github.com/spinframework/spin-environments"
+  - url: "https://github.com/spinframework/spin-fileserver"
+  - url: "https://github.com/spinframework/spin-go-sdk"
+  - url: "https://github.com/spinframework/spin-js-sdk"
+  - url: "https://github.com/spinframework/spin-plugins"
+  - url: "https://github.com/spinframework/spin-python-sdk"
+  - url: "https://github.com/spinframework/spin-redirect"
+  - url: "https://github.com/spinframework/spin-rust-sdk"
+  - url: "https://github.com/spinframework/spin-test"
+  - url: "https://github.com/spinframework/spin-trigger-command"
+  - url: "https://github.com/spinframework/spin-trigger-cron"
+  - url: "https://github.com/spinframework/spin-trigger-mqtt"
+  - url: "https://github.com/spinframework/spin-trigger-plugins"
+  - url: "https://github.com/spinframework/spin-trigger-sqs"
 
 website: "https://spinframework.dev"
+
+# TODO: Add adopters list once ADOPTERS.md exists, then uncomment:
+# adopters:
+#   path: "https://github.com/x/x/blob/main/ADOPTERS.md"
 
 artwork: "https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/spin.svg"
 
@@ -43,8 +89,8 @@ legal:
   license:
     path: "https://github.com/spinframework/spin/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
