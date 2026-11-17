@@ -68,7 +68,7 @@ website: "https://spinframework.dev"
 # adopters:
 #   path: "https://github.com/x/x/blob/main/ADOPTERS.md"
 
-artwork: "https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/spin.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/spin"
 
 security:
   policy:
