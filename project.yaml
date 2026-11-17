@@ -1,4 +1,4 @@
-# .project metadata for Spin
+# .project metadata for SpinKube
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
 # TODO: Add adopters list (ADOPTERS.md)
@@ -9,7 +9,14 @@ name: "Spin"
 description: "Spin is a framework for building serverless applications in WebAssembly."
 type: "project"
 package_managers:
-  ghcr: "ghcr.io/spinframework/spin"
+  ghcr:
+    - "ghcr.io/spinframework/spin"
+    - "ghcr.io/spinframework/spin-operator"
+    - "ghcr.io/spinframework/runtime-class-manager"
+    - "ghcr.io/spinframework/containerd-shim-spin/node-installer"
+  helm:
+    - "oci://ghcr.io/spinframework/charts/spin-operator"
+    - "oci://ghcr.io/spinframework/charts/runtime-class-manager"
   cargo:
     - "spin-sdk"
     - "spin-macro"
@@ -30,14 +37,16 @@ package_managers:
   go: "github.com/spinframework/spin-go-sdk/v3"
 project_lead: "fibonacci1729"
 slack_channels:
-  - name: "#spin"
+  - name: "#spinkube"
     primary: true
+  - name: "#spinkube-dev"
+  - name: "#spin"
   - name: "#spin-maintainers"
 
 maturity_log:
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/116"
+    issue: "https://github.com/cncf/sandbox/issues/330"
 
 repositories:
   - url: "https://github.com/spinframework/spin"
@@ -61,6 +70,12 @@ repositories:
   - url: "https://github.com/spinframework/spin-rust-sdk"
   - url: "https://github.com/spinframework/spin-test"
   - url: "https://github.com/spinframework/spin-trigger-plugins"
+  - url: "https://github.com/spinframework/spin-operator"
+  - url: "https://github.com/spinframework/containerd-shim-spin"
+  - url: "https://github.com/spinframework/runtime-class-manager"
+  - url: "https://github.com/spinframework/spin-plugin-kube"
+  - url: "https://github.com/spinframework/spinkube-docs"
+  - url: "https://github.com/spinframework/spinkube-governance"
 
 website: "https://spinframework.dev"
 

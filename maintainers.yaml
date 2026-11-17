@@ -7,6 +7,20 @@ maintainers:
   - project_id: "spinkube"
     org: "spinframework"
     teams:
+      # Source of truth: https://github.com/spinframework/spin/blob/main/MAINTAINERS.md
+      - name: "spin-maintainers"
+        members:
+          - fibonacci1729
+          - itowlson
+          - dicej
+          - kate-goldenring
+          - lann
+          - michelleN
+          - radu-matei
+          - rajatjindal
+          - rylev
+          - calebschoepp
+          - alexcrichton
       # Source of truth: https://github.com/orgs/spinframework/teams/spinkube-maintainers
       - name: "spinkube-maintainers"
         members:
