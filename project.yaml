@@ -37,13 +37,16 @@ package_managers:
   go: "github.com/spinframework/spin-go-sdk/v3"
 project_lead: "fibonacci1729"
 slack_channels:
+  - - name: "#spin"
+  - primary: true
   - name: "#spinkube"
-    primary: true
   - name: "#spinkube-dev"
-  - name: "#spin"
   - name: "#spin-maintainers"
 
 maturity_log:
+  - phase: "sandbox"
+    date: "2025-01-21T00:00:00Z"
+    issue: "https://github.com/cncf/sandbox/issues/116"
   - phase: "sandbox"
     date: "2025-01-21T00:00:00Z"
     issue: "https://github.com/cncf/sandbox/issues/330"

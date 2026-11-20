@@ -4,7 +4,7 @@
 
 #  Maintainers: Please connect your GitHub handle to your LFID on openprofile.dev to enable automatic access to CNCF resources. The system will use your primary email address for setup.
 maintainers:
-  - project_id: "spinkube"
+  - project_id: "spin"
     org: "spinframework"
     teams:
       # Source of truth: https://github.com/spinframework/spin/blob/main/MAINTAINERS.md
