@@ -35,10 +35,12 @@ package_managers:
     - "@spinframework/wasi-http-proxy"
   pypi: "spin-sdk"
   go: "github.com/spinframework/spin-go-sdk/v3"
-project_lead: "fibonacci1729"
+project_lead:
+  - "fibonacci1729"
+  - "kate-goldenring"
 slack_channels:
-  - - name: "#spin"
-  - primary: true
+  - name: "#spin"
+    primary: true
   - name: "#spinkube"
   - name: "#spinkube-dev"
   - name: "#spin-maintainers"
